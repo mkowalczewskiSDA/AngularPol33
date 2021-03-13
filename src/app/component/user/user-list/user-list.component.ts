@@ -17,4 +17,9 @@ export class UserListComponent implements OnInit {
     this.userService.findAll().subscribe(data => this.users = data)
   }
 
+  onDelete(id: number) {
+    this.userService.delete(id)
+    window.location.reload()
+  }
+
 }

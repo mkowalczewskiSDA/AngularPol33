@@ -16,6 +16,9 @@
             <td>{{ user.firstName }}</td>
             <td>{{ user.lastName }}</td>
             <td><a href="mailto:{{ user.email }}">{{ user.email }}</a></td>
+            <td>
+              <button type="submit" class="btn btn-info" (click)="onDelete(user.id)">Delete</button>
+            </td>
         </tr>
       </tbody>
     </table>

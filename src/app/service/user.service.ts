@@ -23,7 +23,7 @@ export class UserService {
    }
 
    public delete(id: number) {
-     return this.http.delete(this.usersUrl+'/'+id)
+     return this.http.delete(this.usersUrl+'/'+id).subscribe(() => console.log("user deleted"));
    }
 
 }
