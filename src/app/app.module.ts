@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { UserListComponent } from './component/user/user-list/user-list.component';
 import { UserService } from './service/user.service';
+import { UserFormComponent } from './component/user/user-form/user-form.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserListComponent
+    UserListComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
