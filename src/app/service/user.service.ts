@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { r } from '@angular/core/src/render3';
 import { Observable } from 'rxjs/Observable';
 import { User } from '../model/user';
 

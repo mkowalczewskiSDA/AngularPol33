@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { UserListComponent } from './component/user/user-list/user-list.component';
+import { UserService } from './service/user.service';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { UserListComponent } from './component/user/user-list/user-list.componen
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
