@@ -19,4 +19,12 @@ export class UserService {
      return this.users
    }
 
+   public create(user: User) {
+     return this.http.post<User>(this.usersUrl, user)
+   }
+
+   public delete(id: number) {
+     return this.http.delete(this.usersUrl+'/'+id)
+   }
+
 }
